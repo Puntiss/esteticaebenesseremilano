@@ -1,5 +1,5 @@
 # Description
-This is a website for a beauty ectivity in Milan [(Google Maps)](https://maps.app.goo.gl/76wnVBWGDFYiUa9u9)
+This is a website for a beauty activity in Milan [(Google Maps)](https://maps.app.goo.gl/76wnVBWGDFYiUa9u9)
 
 # Live Test
 If you want to try live code, visit the [website](https://www.esteticaebenesseremilano.com/home).
