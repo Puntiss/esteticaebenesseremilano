@@ -1,0 +1,38 @@
+
+/* You can add global styles to this file, and also import other style files */
+.button-whatsapp{
+    background-color: #00E073;
+    border: none !important;
+    color: white;
+}
+
+.button-whatsapp:hover{
+    background-color:  #128C7E;
+    color: white; 
+}
+
+.button-direction{
+    background-color: #4486F4;
+    border: none !important;
+    color: white;
+}
+
+.button-direction:hover{
+    background-color:  #275ebd;
+    color: white;
+}
+
+.button-direction:focus, .button-whatsapp:focus{
+    color: white;
+}
+
+.img-promozionale{
+    width: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    border: 2px solid;
+}
+

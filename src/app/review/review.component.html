@@ -1,0 +1,35 @@
+<div class="section-single-main">
+    <div class="container">
+        <ng-container *ngIf="!sent else reviewSent">
+
+            <h3>Lascia una recensione</h3>
+
+            <ng-container *ngIf="!confirmed">
+                <span style="max-width: 450px;">
+                    <div>
+                        <span style="max-width: 450px;">
+                            <ng-container *ngFor="let i of starsArray">
+                                <fa-icon [icon]="i > star ? faStarRegular : faStarSolid"
+                                    style="font-size: 30px;margin-right: 20px;" (click)="chooseStar(i)"></fa-icon>
+                            </ng-container>
+                        </span>
+                    </div>
+                </span>
+                <button class="button button-secondary" (click)="confirmChoose()">Conferma</button>
+            </ng-container>
+
+            <!--(mouseover)="chooseStar(i)"-->
+
+            <ng-container *ngIf="confirmed && star < minStar">
+                <p><span style="max-width: 450px;">Raccontaci cosa possiamo migliorare</span></p>
+                <p><span style="max-width: 450px;"><textarea></textarea></span></p>
+                <button class="button button-secondary mr-2" (click)="confirmBadReview()">Invia</button>
+                <button class="button button-success" (click)="confirmed=false">Annulla</button>
+            </ng-container>
+
+        </ng-container>
+        <ng-template #reviewSent>
+            <h3>Grazie per la tua recensione!</h3>
+        </ng-template>
+    </div>
+</div>

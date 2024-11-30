@@ -1,0 +1,23 @@
+<div class="section section-lg bg-gray-150">
+    <div class="text-center">
+        <p class="subtitle">Le recensioni dei clienti</p>
+    </div>
+    <owl-carousel-o [options]="customOptions">
+        <ng-container *ngFor="let review of testimonials; index as i">
+            <ng-template carouselSlide [id]="i+'index'">
+                <div class="testimonial-box">
+                    <div class="testimonial-title">{{review.titolo}}</div>
+                    <div class="testimonial-rate">
+                        <img [src]="review.fonte == 'GOOGLE_MAPS' ? '../resources/images/google_maps.png' : 
+                                    review.fonte == 'TRUSTPILOT' ? '../resources/images/trustpilot.png' : '../resources/images/rate-1-146x27.png' "
+                            alt="" width="146" height="27" />
+                    </div>
+                    <div class="testimonial-text">“{{review.testimonianza.length > 200 ?
+                        (review.testimonianza.substring(0,200))
+                        + '...' : review.testimonianza }}”</div>
+                    <div class="testimonial-name">— {{review.nome}} {{review.cognome.substring(0,1)}}.</div>
+                </div>
+            </ng-template>
+        </ng-container>
+    </owl-carousel-o>
+</div>

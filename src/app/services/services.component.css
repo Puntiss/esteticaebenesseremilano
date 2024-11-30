@@ -1,0 +1,27 @@
+.nav-link {
+    /*width: 44vh;*/
+    height: 56px;
+    padding: 10px 5px !important;
+}
+
+.tabs-corporate .nav-tabs > *  {
+    width: 47%;
+}
+
+@media (min-width: 768px) {
+    .tabs-corporate .nav-tabs > *  {
+        width: 100%;
+    }
+}
+
+.sticky-button{
+    position: sticky;
+    bottom: 15px;
+    float: right;
+    margin-right: 15px;
+    margin-top: 0px;
+}
+
+h3, .heading-3 {
+   color :var(--serviceHeaderColor);
+}

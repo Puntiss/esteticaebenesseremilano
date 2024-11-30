@@ -1,0 +1,10 @@
+textarea{
+    height: 250px;
+    width: 310px;
+    outline: none;
+}
+
+.button-success{
+    border: 2px solid #545454 !important;
+    color: #545454 !important;
+}

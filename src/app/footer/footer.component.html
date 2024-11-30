@@ -1,0 +1,43 @@
+<footer class="section footer-classic context-dark">
+  <div class="list-wrapper">
+    <div class="row row-sm-30">
+      <div class="col-sm-4 col-md-4 col-lg-3">
+        <p>Orari</p>
+        <ul class="list">
+          <li><a>Lun: Chiuso</a></li>
+          <li><a>Mar: 10.00 - 18.00</a></li>
+          <li><a>Mer: 10.00 - 18.00</a></li>
+          <li><a>Gio: 10.00 - 18.00</a></li>
+          <li><a>Ven: 10.00 - 18.00</a></li>
+          <li><a>Sab: 09:30 - 13:30</a></li>
+          <li><a>Dom: Chiuso </a></li>
+        </ul>
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-3">
+        <p>Servizi</p>
+        <ul class="list">
+          <ng-container *ngFor="let cat of categories">
+            <li><a routerLink="/servizi" (click)="onFooterServiceClicked(cat)" >{{cat}}</a></li>
+          </ng-container>
+        </ul>
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-3">
+        <p>Contatti</p>
+        <ul class="list">
+          <li><a >+{{numero}}</a></li>
+          <li><a >info&#64;esteticaebenesseremilano.com</a></li>
+          <li><a href="https://www.instagram.com/milano_esteticaebenessere">&#64;milano_esteticaebenessere</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="row row-sm-30">
+    <div class="col-lg-6">
+      <div class="group-md group-middle">
+        <p class="rights"><span>&copy;&nbsp; </span><span
+            class="copyright-year"></span><span>&nbsp;</span><span>Estetica e Benessere
+            Milano</span><span>.&nbsp;</span><a routerLink="privacy">Privacy Policy</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
